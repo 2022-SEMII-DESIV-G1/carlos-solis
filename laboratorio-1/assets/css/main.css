@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*? Colores */
+
+  /*? Fuentes */
+  --quicksand: "Quicksand", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --apple: "SF Pro Text", "-apple-system", "BlinkMacSystemFont", "Roboto",
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  /*? Font Size*/
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  background-image: url(https://i.stack.imgur.com/DpkJm.png);
+}
+
+#memoji {
+  width: 250px;
+  height: 250px;
+}
+
+h1,
+h2,
+span {
+  font-family: var(--apple);
+  color: aliceblue;
+  font-weight: 300;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #ffffff;
+  height: 1px;
+}
+
+h3 {
+  color: aliceblue;
+  opacity: 0.5;
+  font-weight: 300;
+  font-family: var(--apple);
+}
+
+hr {
+  width: 50px;
+}
+
+.lab {
+  width: 50% !important;
+}
+
+section > a > i {
+  font-size: 50px;
+  color: aliceblue;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+section > a > i:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .lab {
+    width: 80% !important;
+  }
+
+  section > a > i {
+    font-size: 35px;
+  }
+}
