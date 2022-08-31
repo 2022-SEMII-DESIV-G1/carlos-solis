@@ -69,6 +69,11 @@ section > a > i:hover {
   opacity: 1;
 }
 
+#disclaimer {
+  color: aliceblue;
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 1024px) {
   .lab {
     width: 80% !important;
