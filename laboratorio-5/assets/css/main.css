@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*? Colores */
+
+  /*? Fuentes */
+  --quicksand: "Quicksand", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --apple: "SF Pro Text", "-apple-system", "BlinkMacSystemFont", "Roboto",
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  /*? Font Size*/
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  background-image: url(https://i.stack.imgur.com/DpkJm.png);
+}
+
+h1 {
+  text-align: center;
+  color: rebeccapurple;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: inline;
+  right: auto;
+  left: auto;
+}
+
+ul {
+  background-color: aliceblue;
+  margin: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#list-1 {
+  color: #2d9ff0;
+}
+
+#list-2 {
+  color: #085186;
+}
+
+#list-3 {
+  color: #7dbfef;
+}
+
+#list-4 {
+  color: #2d7bf0;
+}
+
+#list-5 {
+  color: #2d54f0;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+div > img {
+  height: 500px;
+  width: 500px;
+}
