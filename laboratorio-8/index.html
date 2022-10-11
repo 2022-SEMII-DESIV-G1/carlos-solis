@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Laboratorio 8</title>
+  </head>
+  <body>
+    <section>
+      <form id="form">
+        <div id="title" class="child-box">
+          <h2>Contador de letras</h2>
+        </div>
+        <div id="inputs" class="child-box">
+          <label for="string">Cadena de texto</label>
+          <input type="text" name="string" id="string" />
+        </div>
+        <div id="buttons" class="child-box">
+          <button id="clear" onclick="clears()">Limpiar</button>
+          <button onclick="calc()">Calcular</button>
+        </div>
+      </form>
+      <div class="result child-box"><p id="result"></p></div>
+    </section>
+  </body>
+  <script src="main.js"></script>
+</html>
