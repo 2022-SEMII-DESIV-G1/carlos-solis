@@ -1,0 +1,82 @@
+:root {
+  --background: #023361;
+  --bottom-primary: #0085ff;
+  --bottom-danger: #ff0000;
+
+  --apple: "SF Pro Text", "-apple-system", "BlinkMacSystemFont", "Roboto",
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--apple);
+}
+section {
+  background-color: var(--background);
+  width: 500px;
+  height: auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+#title {
+  text-align: center;
+  color: white;
+}
+
+.child-box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 50px;
+}
+
+label {
+  color: white;
+  font-weight: 600;
+}
+input {
+  border: 0;
+  height: 35px;
+  border-radius: 5px;
+}
+.child-box:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+.child-box:nth-child(3) > button {
+  width: 150px;
+  padding: 10px 20px 10px 20px;
+  font-family: var(--apple);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.child-box:nth-child(3) > button:nth-child(1) {
+  background-color: var(--bottom-danger);
+  border: none;
+  cursor: pointer;
+}
+
+.child-box:nth-child(3) > button:nth-child(2) {
+  background-color: var(--bottom-primary);
+  border: none;
+  cursor: pointer;
+}
+
+.result {
+  color: white;
+  font-weight: 600;
+}
+
+#result {
+  color: white;
+}
