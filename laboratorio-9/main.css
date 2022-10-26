@@ -42,7 +42,8 @@ section > div > div {
 
 p {
   position: absolute;
-  right: 50px;
+  top: 20px;
+  right: 40%;
   font-weight: bold;
   color: cadetblue;
   font-size: 20px;

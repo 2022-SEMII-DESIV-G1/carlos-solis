@@ -1,19 +1,4 @@
-function calc(A, i, j) {
-  // Base Case
-  if (i == A.length) {
-    return 0;
-  }
-  let sum;
-  // Add current to the minimum of the next paths
-  sum = A[i][j] + Math.max(calc(A, i + 1, j), calc(A, i + 1, j + 1));
-  // return minimum
-  return sum;
-}
-function minSumPath(A) {
-  return calc(A, 0, 0);
-}
-
-/* Driver program to test above functions */
+//? Arreglo de la piramide
 let A = [
   [75],
   [95, 64],
@@ -31,6 +16,19 @@ let A = [
   [63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
   [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23],
 ];
+//? Funcion que calcula la suma mayor
+function calc(A, i, j) {
+  if (i == A.length) {
+    return 0;
+  }
+  let sum;
+  sum = A[i][j] + Math.max(calc(A, i + 1, j), calc(A, i + 1, j + 1));
+  return sum;
+}
+//? Llamada a la funcion calculadora
+function maxSum(A) {
+  return calc(A, 0, 0);
+}
 
 let cont = 0;
 const div = document.getElementById("piramyd");
@@ -51,4 +49,4 @@ A.forEach((E) => {
 });
 
 const textSum = document.getElementById("sum");
-textSum.innerHTML = "La suma de la ruta mayor es de: " + minSumPath(A);
+textSum.innerHTML = "La suma de la ruta mayor es de: " + maxSum(A);
