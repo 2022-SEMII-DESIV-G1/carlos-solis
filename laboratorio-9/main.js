@@ -1,5 +1,5 @@
 //? Arreglo de la piramide
-let A = [
+let array = [
   [75],
   [95, 64],
   [17, 47, 82],
@@ -17,36 +17,37 @@ let A = [
   [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23],
 ];
 //? Funcion que calcula la suma mayor
-function calc(A, i, j) {
-  if (i == A.length) {
+function calc(array, i, j) {
+  if (i == array.length) {
     return 0;
   }
   let sum;
-  sum = A[i][j] + Math.max(calc(A, i + 1, j), calc(A, i + 1, j + 1));
+  sum =
+    array[i][j] + Math.max(calc(array, i + 1, j), calc(array, i + 1, j + 1));
   return sum;
 }
 //? Llamada a la funcion calculadora
-function maxSum(A) {
-  return calc(A, 0, 0);
+function maxSum(array) {
+  return calc(array, 0, 0);
 }
 
 let cont = 0;
 const div = document.getElementById("piramyd");
-A.forEach((E) => {
+array.forEach((rows) => {
   cont++;
   const parentDiv = document.createElement("div");
   parentDiv.id = "parent" + cont;
   div.appendChild(parentDiv);
   console.log("[");
-  E.forEach((d) => {
+  rows.forEach((column) => {
     const divParent = document.getElementById("parent" + cont);
     const childDiv = document.createElement("div");
-    childDiv.textContent = d;
+    childDiv.textContent = column;
     divParent.appendChild(childDiv);
-    console.log(d);
+    console.log(column);
   });
   console.log("]");
 });
 
 const textSum = document.getElementById("sum");
-textSum.innerHTML = "La suma de la ruta mayor es de: " + maxSum(A);
+textSum.innerHTML = "La suma de la ruta mayor es de: " + maxSum(array);
