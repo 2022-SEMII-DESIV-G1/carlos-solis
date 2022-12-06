@@ -12,15 +12,25 @@
       <section class="form">
         <form action="" id="form">
           <label for="height">Altura de la piramide</label>
-          <input type="number" name="height" id="height" />
+          <input type="number" name="height" id="height" required />
 
-          <label for="pyramid">piramide</label>
-          <textarea rows="5" cols="20" name="pyramid" id="pyramid"></textarea>
+          <label for="pyramid"
+            >Introduzca la piramide separado por comas (",")</label
+          >
+          <p id="validation">*La piramide esta incompleta</p>
+          <textarea
+            rows="5"
+            cols="20"
+            name="pyramid"
+            id="pyramid"
+            required
+          ></textarea>
 
           <button type="submit">Enviar</button>
         </form>
       </section>
     </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
