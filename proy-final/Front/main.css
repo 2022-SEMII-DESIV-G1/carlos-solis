@@ -1,0 +1,24 @@
+.container {
+  padding: 20px;
+}
+
+.form {
+  width: 50%;
+  height: 50%;
+}
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.form > form > label {
+  width: 100%;
+}
+.form > form > input,
+.form > form > textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
